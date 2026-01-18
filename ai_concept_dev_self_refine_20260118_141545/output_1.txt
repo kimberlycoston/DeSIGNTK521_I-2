@@ -1,0 +1,124 @@
+1. Idea name: Comfort Zone Filters
+   Ring mechanism: Motion Zones/Sensitivity
+   Safety mechanism: You only see choices inside self-defined “understandable and comfy” zones, cutting out intimidating options.
+   User interaction: User selects industries, complexity levels, and max volatility sliders to define zones before viewing recommendations.
+
+2. Idea name: What-If Live Ticker View
+   Ring mechanism: Live View
+   Safety mechanism: Real-time plan impact makes each choice feel transparent and predictable.
+   User interaction: User hovers over an ETF and watches live gauges update for diversification, risk, and monthly budget impact.
+
+3. Idea name: Gentle Threshold Nudge Alerts
+   Ring mechanism: Motion Alerts
+   Safety mechanism: Alerts only trigger on user-set thresholds, reducing FOMO and panic from random noise.
+   User interaction: User sets “Notify if price < fair value by 5% and risk score ≤ my limit.”
+
+4. Idea name: Decision Timeline Playback
+   Ring mechanism: Event History/Playback
+   Safety mechanism: Seeing exactly how and why you decided reduces regret and self-blame.
+   User interaction: User replays a past pick’s timeline showing checked criteria, notes, and market context at the moment.
+
+5. Idea name: Trusted Buddy Review
+   Ring mechanism: Shared Access
+   Safety mechanism: A quick second look from someone you trust adds protective reassurance.
+   User interaction: User shares a shortlist and receives simple buddy responses: Approve, Concern, or “Ask me why.”
+
+6. Idea name: Explain-Back Quick Chat
+   Ring mechanism: Two-Way Talk
+   Safety mechanism: Having the system restate your understanding in plain language confirms clarity before committing.
+   User interaction: User types “Explain this fund in one paragraph,” then edits the summary until it matches their understanding.
+
+7. Idea name: Practice To Real Switch
+   Ring mechanism: Modes (Home/Away)
+   Safety mechanism: Sim-first mode lets you learn the flow without risk, easing performance anxiety.
+   User interaction: User toggles Practice mode and completes mock buys; switching to Real mode requires a calm checklist.
+
+8. Idea name: Morning Plan Snapshot
+   Ring mechanism: Snapshot/Check-in
+   Safety mechanism: A single concise status card minimizes overwhelm and choice paralysis.
+   User interaction: User opens a daily card showing plan fit, top two candidates, and a one-tap “learn more” path.
+
+9. Idea name: Amount Blinder Privacy
+   Ring mechanism: Privacy Controls
+   Safety mechanism: Hiding dollar amounts while browsing reduces loss aversion and fear.
+   User interaction: User taps “Blur amounts” to view only percentages, fees, and fit scores until ready to reveal.
+
+10. Idea name: Plan Guardrail Alerts
+    Ring mechanism: Motion Alerts
+    Safety mechanism: Automatic warnings stop picks that would break your diversification or risk rules.
+    User interaction: User attempts to add a stock and sees “This would push Tech >30%—see safer alternatives?”
+
+11. Idea name: Confidence Trace Playback
+    Ring mechanism: Event History/Playback
+    Safety mechanism: Reviewing how evidence shifted your confidence protects against hindsight shame.
+    User interaction: User opens a confidence timeline showing each data point and the confidence change it caused.
+
+12. Idea name: Risk Heat Live Map
+    Ring mechanism: Live View
+    Safety mechanism: Immediate visual of worst-case impact makes risk feel concrete and manageable.
+    User interaction: User drags an “amount” slider and watches a color heat map of portfolio drawdown update live.
+
+13. Idea name: Quiet Hours Trade Mode
+    Ring mechanism: Modes (Home/Away)
+    Safety mechanism: Time fences prevent impulsive late-night decisions when anxiety is high.
+    User interaction: User schedules trade windows (e.g., 9–5); attempts outside trigger a “sleep on it” delay with a summary.
+
+14. Idea name: Pre-Commit Question Ping
+    Ring mechanism: Two-Way Talk
+    Safety mechanism: A short Q&A surfaces the three key risks so you don’t miss something obvious.
+    User interaction: User taps “Ask before buy,” then checks off three tailored prompts (e.g., fees, downside, fit) to proceed.
+
+15. Idea name: Co-Approval Spending Gate
+    Ring mechanism: Shared Access
+    Safety mechanism: Requiring a co-approve for bigger or riskier moves adds a calming buffer.
+    User interaction: User sets “>$500 or risk>medium needs approval” and sends an in-app request to their mentor.
+
+16. Idea name: Milestone Progress Snapshot
+    Ring mechanism: Snapshot/Check-in
+    Safety mechanism: Focusing on small progress milestones reassures momentum over short-term swings.
+    User interaction: User opens a weekly card: “80% to diversified base—next: add bond ETF” with a one-tap action.
+
+17. Idea name: Knowability Zone Filter
+    Ring mechanism: Motion Zones/Sensitivity
+    Safety mechanism: Limiting choices to transparent, easy-to-understand assets reduces fear of hidden traps.
+    User interaction: User selects “Knowability: High only” to hide complex products and derivatives.
+
+18. Idea name: Calm Countdown Confirm Mode
+    Ring mechanism: Modes (Home/Away)
+    Safety mechanism: A cooling-off timer lowers impulsivity and post-purchase regret.
+    User interaction: User confirms a first-time buy and chooses 12–24h countdown; receives brief explains during the wait.
+
+19. Idea name: Quiet Composite Signal Alert
+    Ring mechanism: Motion Alerts
+    Safety mechanism: Alerts fire only when multiple plan-aligned signals align, cutting noise and FOMO.
+    User interaction: User defines a rule: “Alert if price < fair value, fees <0.1%, and sector balance stays within plan.”
+
+20. Idea name: Regret Shield Sharing
+    Ring mechanism: Privacy Controls
+    Safety mechanism: Sharing your plan without exposing losses removes shame and judgment risk.
+    User interaction: User toggles “Share anonymized plan” to send a view with hidden amounts and masked past mistakes.
+
+21. Idea name: Thesis News Context Playback
+    Ring mechanism: Event History/Playback
+    Safety mechanism: Only seeing news tied to your thesis reduces overwhelm from irrelevant headlines.
+    User interaction: User taps “Why did this move?” to watch a short reel linking events to their thesis checklist.
+
+22. Idea name: Peer Reactions Window
+    Ring mechanism: Shared Access
+    Safety mechanism: Emoji-only reactions keep feedback supportive and low-pressure.
+    User interaction: User shares a candidate and receives limited reactions (👍, 🤔, 🔍) without open-ended comments.
+
+23. Idea name: One Card Clarity Checklist
+    Ring mechanism: Snapshot/Check-in
+    Safety mechanism: A single summary of what it is, why it fits, and the worst month calms last-minute doubts.
+    User interaction: User reads the card and taps “I understand” to proceed or “Show me an easier alternative.”
+
+24. Idea name: Stepwise Unlock Path
+    Ring mechanism: Modes (Home/Away)
+    Safety mechanism: Gradual unlock from starter bundles to single picks prevents overwhelming complexity.
+    User interaction: User completes a short lesson and builds a core bundle before single-stock browsing unlocks.
+
+25. Idea name: Alert Sensitivity Dial
+    Ring mechanism: Motion Zones/Sensitivity
+    Safety mechanism: Controlling alert intensity reduces stress from over-notification.
+    User interaction: User sets the dial to “Only major plan breaches” or “All small nudges” and tests with a preview.

@@ -1,0 +1,12 @@
+You are generating concept ideas for a design project.
+
+HMW: How might we make choosing investments more like Ring Doorbells?
+Audience: young adults / beginner investors
+Desired emotion: safety
+Analogy: Ring Doorbell (monitoring, alerts, event history, zones/sensitivity, shared access, two-way talk, modes, privacy)
+
+TASK:
+Generate 25 concept ideas for a service that helps young adults choose what to invest in.
+The experience should feel SAFE like Ring Doorbells.
+Output as a numbered list. Keep each idea 1–2 sentences, concrete and distinct.
+Avoid generic fintech clichés. Make ideas implementable.

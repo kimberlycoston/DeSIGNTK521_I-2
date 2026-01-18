@@ -1,0 +1,49 @@
+1. Market Motion Zones: Draw your own “zones” (e.g., US large-cap, sustainable ETFs) and the app only suggests investments inside them unless you explicitly unlock an “Unknown Zone” for 24 hours.
+
+2. Sensitivity Slider: Set your volatility tolerance and the feed only shows assets whose historical swings fit; anything outside shows an “Out of Sensitivity” warning with a rationale.
+
+3. Event History Clips: Every suggestion logs a 15–30 second explainer clip of what triggered it (fee drop, earnings, regulation) so you can replay how and why it appeared.
+
+4. Verified Visitor Badge: Assets earn a safety badge if they meet concrete criteria (low fees, diversified holdings, >3-year track record, clean audit); unbadged items require a cooling-off period before buying.
+
+5. Two-Way Talk with Issuers: Tap to hear 60-second audio answers from ETF/company IR to beginner questions (what it holds, fees, risk), vetted and time-stamped.
+
+6. Neighborhood Watch Lists: Join a small trusted circle (family/class/club) that maintains an allowlist/blocklist; your suggestions respect the group’s guardrails by default.
+
+7. Porch Mode (Sandbox): New picks appear in a sandbox where you can simulate, follow alerts, and collect notes for 14 days before the buy button unlocks.
+
+8. Stranger Knock Alert: If hype or social chatter spikes beyond fundamentals, the pick is flagged with a “Stranger Knock” label and a one-screen explanation of specific risks.
+
+9. Zone Overlap Warning: Before recommending, the app shows how much the asset duplicates your current exposure (by sector/country/factor) so you avoid concentration.
+
+10. Safe Hours: Set a curfew (e.g., 10pm–8am) that blocks buy actions and limits the app to education and simulation to reduce impulsive choices.
+
+11. Shared Access Roles: Grant a mentor read-only access to your candidate list with comment rights; only you can approve or execute.
+
+12. Scam Siren: Automated checks for pump patterns or fake filings trigger a hard stop, display evidence links, and enforce a 24-hour wait.
+
+13. Quick Retreat Button: One tap hides all high-risk categories for 30 days and limits suggestions to broad, diversified funds within your zones.
+
+14. Privacy Shutter: Share a pick to get feedback while automatically blurring your balances and amounts; others only see the asset, your notes, and the risk label.
+
+15. Doorbell Chime Digest: Receive a single daily digest with at most three reviewed suggestions, each with a 30-second plain-language summary and risk grade.
+
+16. Guest Pass to Educators: Send a pick to a vetted educator for an asynchronous 10-minute voice-note Q&A; responses are saved to the asset’s history.
+
+17. Zone Calibration Walkthrough: Monthly 5-minute check-in adjusts your zones automatically based on how comfortable you were with recent volatility and outcomes.
+
+18. Dividend Package Preview: For dividend assets, show a delivery calendar with estimated payout dates, past reliability, and tax notes before you add it.
+
+19. Masked Browsing Mode: Explore ideas without training the algorithm; nothing affects future suggestions unless you explicitly save.
+
+20. Door Knock Challenge: For high-risk picks, answer three prompts (how it earns, worst-case loss, exit plan) before the buy button unlocks; your answers are stored for review.
+
+21. Away Mode (Low-Noise): When enabled, the app hides new ideas and only surfaces maintenance suggestions (rebalance, contribution reminders) until you turn it off.
+
+22. Zone-Specific Mute: Mute a sector or theme (e.g., crypto) for 90 days so it disappears from lists and alerts until you unmute.
+
+23. Evidence Tiles: Each suggestion shows four tappable tiles—fee, diversification score, max drawdown, independent sources—that must be opened before you can buy.
+
+24. Friend-at-the-Door: Invite a trusted friend to leave a 30-second voice comment on a pick; you must listen to proceed, adding helpful friction.
+
+25. Low-Light Summaries: Auto-translate complex filings into three simple bullet summaries with highlighted red flags and audio playback for quick, safe understanding.

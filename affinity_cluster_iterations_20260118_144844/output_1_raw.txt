@@ -1,0 +1,90 @@
+{
+  "clusters": [
+    {
+      "cluster_name": "Transparent Sensemaking",
+      "cluster_definition": "Delivers clear, live previews and simple snapshots so users grasp holdings, fees, and fit before acting.",
+      "safety_mechanism": "Sensemaking Transparency",
+      "idea_names": [
+        "Calm Start Portfolio Preview",
+        "Live Fund Fit Check",
+        "Live View Fee Transparency",
+        "Snapshot Risk Check-ins"
+      ]
+    },
+    {
+      "cluster_name": "Zones & Guardrails",
+      "cluster_definition": "User-set boundaries for budgets, drawdowns, and noise act like geofences that prevent risky drift.",
+      "safety_mechanism": "Guardrails",
+      "idea_names": [
+        "Budget Guardrails Setup",
+        "Zone Breach Drawdown Watch",
+        "Headline Motion Filters"
+      ]
+    },
+    {
+      "cluster_name": "Calibrated Alerts",
+      "cluster_definition": "Threshold-based notifications and pre-sell nudges surface only when needed to avoid alarm fatigue.",
+      "safety_mechanism": "Alert Tuning",
+      "idea_names": [
+        "Motion Alerts for Volatility",
+        "Motion Alerts Sell Nudges"
+      ]
+    },
+    {
+      "cluster_name": "Playback Learning",
+      "cluster_definition": "Historical replays and annotated timelines explain events and consequences to build durable confidence.",
+      "safety_mechanism": "Reflective Learning",
+      "idea_names": [
+        "History Playback Explainer",
+        "Playback Lessons Library",
+        "Event Playback After Buy"
+      ]
+    },
+    {
+      "cluster_name": "Expert Line",
+      "cluster_definition": "Two-way help from analysts, coaches, and plain-language explainers provides human-backed clarity.",
+      "safety_mechanism": "Expert Reassurance",
+      "idea_names": [
+        "Two-Way Ask an Analyst",
+        "Two-Way Term Glossary",
+        "Coach Office Hours"
+      ]
+    },
+    {
+      "cluster_name": "Trusted Eyes",
+      "cluster_definition": "Controlled, masked sharing with trusted people supplies supportive feedback without overexposure.",
+      "safety_mechanism": "Social Accountability",
+      "idea_names": [
+        "Trusted Friend Read-Only",
+        "Role‑Based Family Access",
+        "Shared Access Accountability Notes",
+        "Community Check‑in Board"
+      ]
+    },
+    {
+      "cluster_name": "Privacy First",
+      "cluster_definition": "Strong defaults, anonymization, and sandboxing protect identity and keep reflections confidential.",
+      "safety_mechanism": "Privacy Control",
+      "idea_names": [
+        "Privacy-First Profile Intake",
+        "Privacy Sandbox Practice",
+        "Event History Win-Learn Review"
+      ]
+    },
+    {
+      "cluster_name": "Safe Modes",
+      "cluster_definition": "Mode-based states limit actions and noise during vulnerable periods to create calm buffers.",
+      "safety_mechanism": "Mode Gating",
+      "idea_names": [
+        "Safe Mode Starter Packs",
+        "Mode-Aware Quiet Hours",
+        "Mode-Locked Cooling Off"
+      ]
+    }
+  ],
+  "notes": [
+    "Clusters mirror Ring Doorbell metaphors: zones, modes, live view, alerts, history, sharing, and privacy.",
+    "Most mechanisms either reduce surprise (alerts/zones/modes) or increase clarity (live view/playback/expert help).",
+    "Masked defaults appear across social and privacy clusters to reinforce a ‘safe by default’ posture."
+  ]
+}

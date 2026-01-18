@@ -1,0 +1,77 @@
+{
+  "chosen_lens": "By uncertainty type (knowledge / outcome / identity-shame / privacy / manipulation)",
+  "clusters": [
+    {
+      "cluster_name": "Knowledge: Pre-Trade Clarity",
+      "cluster_definition": "Reduce knowledge uncertainty before committing money by making fit, composition, and costs legible at a glance.",
+      "idea_names": [
+        "Calm Start Portfolio Preview",
+        "Live Fund Fit Check",
+        "Live View Fee Transparency"
+      ]
+    },
+    {
+      "cluster_name": "Knowledge: Human-Assisted Understanding",
+      "cluster_definition": "Address knowledge gaps with calm, on-demand help from experts and plain-language explainers.",
+      "idea_names": [
+        "Two-Way Term Glossary",
+        "Two-Way Ask an Analyst",
+        "Coach Office Hours"
+      ]
+    },
+    {
+      "cluster_name": "Knowledge: Playback & Ongoing Sensemaking",
+      "cluster_definition": "Lower uncertainty with periodic summaries and annotated replays that explain what happened and why.",
+      "idea_names": [
+        "Snapshot Risk Check-ins",
+        "History Playback Explainer",
+        "Playback Lessons Library",
+        "Event Playback After Buy"
+      ]
+    },
+    {
+      "cluster_name": "Outcome Risk: Limits & Sensing",
+      "cluster_definition": "Contain outcome uncertainty by setting safe bounds and monitoring movement that actually matters.",
+      "idea_names": [
+        "Budget Guardrails Setup",
+        "Safe Mode Starter Packs",
+        "Motion Alerts for Volatility",
+        "Zone Breach Drawdown Watch"
+      ]
+    },
+    {
+      "cluster_name": "Manipulation/Noise: Anti-Reactivity Guards",
+      "cluster_definition": "Protect against emotional or platform-driven overreactions with quieting, cooling-off, and pre-decision nudges.",
+      "idea_names": [
+        "Mode-Aware Quiet Hours",
+        "Mode-Locked Cooling Off",
+        "Motion Alerts Sell Nudges",
+        "Headline Motion Filters"
+      ]
+    },
+    {
+      "cluster_name": "Privacy: Data Control & Scoped Access",
+      "cluster_definition": "Clarify what data is used, practice safely, and grant precise, limited access to reduce privacy uncertainty.",
+      "idea_names": [
+        "Privacy-First Profile Intake",
+        "Privacy Sandbox Practice",
+        "Role\u2011Based Family Access"
+      ]
+    },
+    {
+      "cluster_name": "Identity\u2011Shame Safety: Masked Social Support",
+      "cluster_definition": "Enable supportive accountability and reflection while minimizing fear of judgment with masking and private journaling.",
+      "idea_names": [
+        "Trusted Friend Read-Only",
+        "Shared Access Accountability Notes",
+        "Community Check\u2011in Board",
+        "Event History Win-Learn Review"
+      ]
+    }
+  ],
+  "what_improved": [
+    "Centered on the root of anxiety (knowledge, outcome, privacy, manipulation, identity\u2011shame) rather than lifecycle timing, which better targets the safe + reassuring emotion; e.g., identity\u2011shame features are isolated from generic privacy.",
+    "Resolved overlap and scope issues: the prior \u201cRespond: Human & Social Support\u201d mixed expert help, social sharing, and education; now split into Knowledge: Human\u2011Assisted and Identity\u2011Shame Safety. Headline Motion Filters moved out of generic detection into Anti\u2011Reactivity where it belongs.",
+    "Balanced granularity for design actionability: previously one bucket was too broad and another too narrow; new clusters are coherent (3\u20134 ideas each) and map to clear design patterns and tones for reassurance."
+  ]
+}

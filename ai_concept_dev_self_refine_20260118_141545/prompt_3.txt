@@ -1,0 +1,48 @@
+You are generating concept ideas for a design project.
+
+Primary goal (non‑negotiable):
+Make choosing investments feel emotionally safe and reassuring for young adults/beginner investors (calm, non‑overwhelming, confidence‑building, low‑regret, low‑shame, protective, supportive).
+
+HMW:
+How might we make choosing investments feel as safe and reassuring as using a Ring Doorbell?
+
+Analogy reminder:
+Use Ring mechanisms as safety mechanisms, not superficial copies. Allowed ring_feature values:
+- Live View
+- Motion Alerts
+- Event History/Playback
+- Motion Zones/Sensitivity
+- Shared Access
+- Two-Way Talk
+- Modes Home/Away
+- Snapshot/Check-in
+- Privacy Controls
+
+Generation task:
+Produce exactly 25 distinct, implementable software concepts (mobile/web) that help young adults choose what to invest in.
+
+Output format:
+Return a JSON array of exactly 25 objects. Each object must have these fields only:
+- idea_name: 3–6 words.
+- ring_feature: one of the allowed Ring features above.
+- what_user_does: exactly one sentence that includes at least one concrete input (e.g., toggle, slider, dropdown, threshold, text field, selection) and at least one concrete output artifact (e.g., alert, badge, banner, modal, graph, timeline, checklist, snapshot card, tooltip, drawer).
+- safety_mechanism: exactly one sentence following this exact pattern and naming a safety target from the list: “In Ring, [ring_feature] does X; here it becomes Y, which reduces [fear_of_loss|fear_of_being_wrong|fear_of_not_knowing|FOMO|regret|shame].”
+- category: one of [Onboarding, Decision Support, Risk Alerts, Education, Social Support, Post-Decision Support].
+
+Constraints:
+- Ring feature coverage: Use each ring_feature at least 2 times and at most 4 times across the 25 ideas.
+- Category coverage: Include at least 3 ideas in each category and at most 6 in any single category.
+- Implementability: Software-only; plausible to prototype within ~3 months by a small team. Use only mainstream, readily accessible signals (e.g., prices, percent/daily changes, basic volatility bands, drawdowns, fees/expense ratios, diversification metrics, simple news/headline keywords, user-entered rules/notes). No performance guarantees or implied-certainty trading signals. Frame outputs as education, rules, explainable checks.
+- Social safety: Any idea in Social Support must include masking/anonymization defaults in “what_user_does” (e.g., mask balances, redact PII).
+- Artifact diversity: Across all 25 ideas, include at least 6 distinct output artifact types (examples: badge, banner, modal, checklist, timeline, graph, alert, drawer, tooltip, snapshot card). Avoid overusing a single artifact.
+- Distinctness: Each idea must differ meaningfully by at least one of ring_feature, category, trigger/condition, or output artifact. Avoid near-duplicates.
+- Tone: Supportive and non-judgmental; avoid social comparison and leaderboards.
+
+Checklist before you output:
+- Count ring_feature usages to ensure each appears 2–4 times.
+- Ensure category distribution: 3–6 per category.
+- Verify each “safety_mechanism” follows the exact sentence pattern and names one safety target.
+- Verify each “what_user_does” contains both a concrete input and a concrete output artifact.
+- Ensure artifact variety across the set (≥6 distinct output artifact types).
+
+Output only the JSON array, no extra commentary.

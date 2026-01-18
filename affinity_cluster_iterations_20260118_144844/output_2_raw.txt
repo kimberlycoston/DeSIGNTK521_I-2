@@ -1,0 +1,77 @@
+{
+  "chosen_lens": "By timing (prevent / detect / respond / recover)",
+  "clusters": [
+    {
+      "cluster_name": "Prevent: Pre‑commit Sensemaking",
+      "cluster_definition": "Upfront clarity before committing money: quick previews of holdings, fit, and fees to avoid regretful choices.",
+      "idea_names": [
+        "Calm Start Portfolio Preview",
+        "Live Fund Fit Check",
+        "Live View Fee Transparency"
+      ]
+    },
+    {
+      "cluster_name": "Prevent: Budget, Modes & Noise",
+      "cluster_definition": "Set safe operating bounds and quiet periods so the system stays calm and within limits by default.",
+      "idea_names": [
+        "Budget Guardrails Setup",
+        "Safe Mode Starter Packs",
+        "Mode-Aware Quiet Hours"
+      ]
+    },
+    {
+      "cluster_name": "Prevent: Privacy & Identity Safety",
+      "cluster_definition": "Protect identity and control exposure up front with anonymization, sandboxing, and role-based access.",
+      "idea_names": [
+        "Privacy-First Profile Intake",
+        "Privacy Sandbox Practice",
+        "Role‑Based Family Access"
+      ]
+    },
+    {
+      "cluster_name": "Detect: Market & Plan Drift",
+      "cluster_definition": "Gentle sensing for movement that matters—news, volatility, and drawdowns—plus simple check-ins.",
+      "idea_names": [
+        "Headline Motion Filters",
+        "Snapshot Risk Check-ins",
+        "Motion Alerts for Volatility",
+        "Zone Breach Drawdown Watch"
+      ]
+    },
+    {
+      "cluster_name": "Respond: Human & Social Support",
+      "cluster_definition": "Low‑pressure help when decisions arise: experts, plain‑language explainers, and trusted social review.",
+      "idea_names": [
+        "Two-Way Ask an Analyst",
+        "Two-Way Term Glossary",
+        "Coach Office Hours",
+        "Trusted Friend Read-Only",
+        "Shared Access Accountability Notes",
+        "Community Check‑in Board"
+      ]
+    },
+    {
+      "cluster_name": "Respond: Decision Safeguards",
+      "cluster_definition": "Light friction at the moment of action—nudges and cooling‑off—to prevent reactive mistakes.",
+      "idea_names": [
+        "Motion Alerts Sell Nudges",
+        "Mode-Locked Cooling Off"
+      ]
+    },
+    {
+      "cluster_name": "Recover: Playback & Reflection",
+      "cluster_definition": "After-action reviews and journaling to make sense of outcomes and build resilient confidence.",
+      "idea_names": [
+        "History Playback Explainer",
+        "Playback Lessons Library",
+        "Event Playback After Buy",
+        "Event History Win-Learn Review"
+      ]
+    }
+  ],
+  "what_improved": [
+    "Reduced overlap and ambiguity by assigning each idea to a distinct moment in the safety lifecycle (prevent/detect/respond/recover); e.g., moved Event History Win-Learn Review from a generic privacy bucket into Recover where it actually builds reassurance.",
+    "Balanced scope by splitting oversized social/privacy groupings and separating immediate Decision Safeguards from broader Human & Social Support, while consolidating pre‑trade sensemaking; clusters are clearer and less sprawling.",
+    "Lens improves design insight for safe + reassuring experiences by clarifying sequencing, triggers, and handoffs—what to set up in advance, what to sense, how to respond calmly, and how to learn—enabling orchestration rather than feature silos."
+  ]
+}

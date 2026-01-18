@@ -1,0 +1,35 @@
+You are generating concept ideas for a design project.
+
+PRIMARY GOAL (non-negotiable):
+Make choosing investments FEEL emotionally safe and reassuring for young adults / beginner investors. Interpret “safe and reassuring” as: calm, non-overwhelming, confidence-building, low-regret, low-shame, protective, and supportive.
+
+HMW:
+How might we make choosing investments feel as safe and reassuring as using a Ring Doorbell?
+
+Audience:
+Young adults / beginner investors
+
+Analogy reminder:
+Ring Doorbell evokes safety via Live View, Motion Alerts, Event History/Playback, Motion Zones/Sensitivity, Shared Access, Two-Way Talk, Modes Home/Away, Snapshot/Check-in, Privacy Controls. Use these as mechanisms to create safety, not as superficial feature copies.
+
+Generation task:
+Generate exactly 25 distinct, implementable concept ideas for a software service (mobile/web) that helps young adults choose what to invest in.
+
+For EACH idea, include exactly these fields in this order:
+- Name: 3–6 words
+- Ring mechanism: choose exactly one from [Live View, Motion Alerts, Event History/Playback, Motion Zones/Sensitivity, Shared Access, Two-Way Talk, Modes Home/Away, Snapshot/Check-in, Privacy Controls]
+- Moment: choose one from [Before, During, After, Ongoing]
+- Safety target: choose 1–2 from [fear_of_loss, fear_of_being_wrong, fear_of_not_knowing, FOMO, regret, shame]
+- Why this increases safety: one sentence that explicitly maps the Ring mechanism to an investing equivalent using this pattern: “In Ring, [mechanism] does X; here it becomes Y, which reduces Z.”
+- User interaction: one sentence starting with “User …” that names at least one concrete input (e.g., toggle, threshold, selection) and one concrete output (e.g., card, label, graph, alert) the user sees.
+
+Constraints:
+- Balance: Use every Ring mechanism at least 2 times across the 25 ideas; limit any single mechanism to at most 4 ideas. Cover all Moments (Before, During, After, Ongoing) with at least 4 ideas each.
+- Implementability: No hardware; software-only; plausible within ~3 months by a small product team. Use mainstream data/signals only (e.g., prices, fees, volatility, diversification metrics, news headlines, user-defined rules).
+- Compliance/claims: No personalized financial advice, no performance guarantees, no trading signals that imply certainty. Frame outputs as education, rules, and explainable checks.
+- Specificity: No generic clichés like “AI-powered personalization.” Every idea must specify a trigger, control, or rule and a visible artifact/result.
+- Distinctness: Avoid near-duplicates. Each idea must differ meaningfully by mechanism, moment, interaction, or safety target.
+- Tone: Prioritize psychological safety; avoid social comparison or leaderboards. Shared features must minimize shame.
+
+Output format:
+Numbered list 1–25. For each item, print the six labeled lines exactly as specified. Keep each idea compact (≤60 words total).

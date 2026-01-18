@@ -1,0 +1,54 @@
+[CRITIQUE]
+- Repetition: Multiple ideas rely on the same safety levers (cooling-off periods, buy-button locks, mentorship comments) with minor rewording. Access-control themes repeat (Shared Access, Friend/Mentor roles) without distinct contexts.
+- Vagueness: “Two-Way Talk with Issuers,” “Guest Pass to Educators,” and “Scam Siren” lack implementable detail (how answers are sourced/vetted, data signals used, moderation, legal/compliance). “Neighborhood Watch Lists” and “Shared Access Roles” don’t clarify permissions or broker compliance boundaries.
+- Missing directions: The output doesn’t explicitly map each idea to a Ring feature, making the analogy uneven and harder to cluster. Some Ring features (Live View, Snapshot/Check-in) are underused or absent, while Motion Zones/Sensitivity and Modes dominate.
+- Weak connection to Ring: Many concepts feel “safety in fintech” rather than “Ring-like,” because the Ring element is implied instead of named and translated (e.g., “Stranger Knock” is clever but doesn’t specify which Ring feature it is analogizing).
+- Safety mechanism clarity: Several ideas state a risk label or badge but don’t specify the mechanism or criteria source (e.g., what data powers “Stranger Knock” or “Verified Visitor”? Who sets thresholds?).
+- Feasibility: Several require heavy partnerships (issuers, educators) or complex detection (scam/pump) that may exceed a small-team, 6-month build. Data dependencies (social chatter, fake filings) and moderation burdens aren’t scoped.
+- Clustering difficulty: Without explicit feature labels or tags, it’s hard to sort ideas by Ring analog or safety type, making synthesis and prioritization harder.
+
+Prompt issues that caused this:
+- It didn’t require explicit mapping to a specific Ring feature per idea.
+- It didn’t ask for a one-sentence safety mechanism, so some ideas framed safety as a vibe vs. a concrete control.
+- It lacked coverage constraints across Ring features, enabling overuse of zones/alerts and neglect of Live View/Snapshot.
+- “Make ideas implementable” was too general; no limits on partnerships, model complexity, or data dependencies.
+- No formatting/template guidance to ensure consistent, clusterable outputs and reduce duplication.
+- No ban on certain clichés beyond a generic line; allowed “AI detection” and social hype ideas without specifying signals or feasibility.
+
+[REVISED_PROMPT]
+You are generating concept ideas for a design project.
+
+Context
+- HMW: How might we make choosing investments more like Ring Doorbells?
+- Audience: young adults / beginner investors
+- Desired emotion: safety
+- Use Ring feature analogies from this exact list: Live View, Motion Alerts, Event History/Playback, Motion Zones/Sensitivity, Shared Access, Two-Way Talk, Modes (Home/Away), Snapshot/Check-in, Privacy Controls.
+
+Task
+Generate exactly 25 concrete, implementable concept ideas for a service that helps young adults choose what to invest in, where the experience feels SAFE like Ring Doorbells.
+
+Coverage constraints
+- Each idea must map to exactly one Ring feature from the list.
+- Across the 25 ideas, cover every Ring feature at least 2 times and no more than 4 times.
+- Avoid duplicates: do not reuse the same mechanic unless applied to a clearly different step (e.g., selection vs. review vs. execution gating).
+
+Safety requirement
+- For every idea include a one-sentence “Safety:” line that explains the specific mechanism (not just the intention) that increases safety.
+
+Feasibility constraints
+- Design for a small team to build in ≤6 months using off-the-shelf market data/APIs, push notifications, and simple rule-based checks; avoid requiring new financial licenses or custody.
+- Limit ideas that depend on external organizations (issuers, paid educators) to at most 2 total; peer/friend involvement is allowed.
+- No claims of beating the market; default scope is diversified assets (index funds/ETFs). If single stocks/crypto appear, include an explicit gating or sandbox step.
+- Avoid generic fintech clichés and jargon (no “robo-advisor,” “AI-powered feed,” “gamified,” “leaderboards,” “copy trading”). Use plain language; “ETF” is OK.
+
+Output format (must follow exactly)
+- Number items 1–25.
+- For each item, use this template with line breaks:
+  Title — Feature: [choose one: Live View | Motion Alerts | Event History/Playback | Motion Zones/Sensitivity | Shared Access | Two-Way Talk | Modes (Home/Away) | Snapshot/Check-in | Privacy Controls]; Tag: [choose one: Impulse Control | Transparency | Risk Fit | Fraud/Scam | Diversification | Social Support | Privacy]
+  Concept: [≤22 words; include a concrete user action and the system response]
+  Safety: [≤18 words; state the mechanism/guardrail: rule, threshold, delay, permission, evidence requirement, or filter]
+
+Notes
+- Make each idea distinct, specific, and implementable without new regulation.
+- No extra commentary before or after the list.
+- Keep language beginner-friendly.

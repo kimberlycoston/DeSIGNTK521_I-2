@@ -1,0 +1,177 @@
+[
+  {
+    "idea_name": "ETF Live Tour",
+    "ring_feature": "Live View",
+    "what_user_does": "User taps a broad-market ETF; app opens Live View showing fee, holdings count, top sectors, and real-time quote.",
+    "safety_mechanism": "Rule: if expense ratio >0.75%, 'Add to Shortlist' button is disabled on that fund card.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Personal Zones Setup",
+    "ring_feature": "Motion Zones/Sensitivity",
+    "what_user_does": "User selects allowed sectors and regions; system filters search to ETFs within zones and hides others.",
+    "safety_mechanism": "Filter: excluded sectors/regions are hidden across search and recommendations, enforced by server-side query constraints.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Beginner Home Mode",
+    "ring_feature": "Modes Home/Away",
+    "what_user_does": "User sets Mode to Home; app only suggests index funds and disables single stock/crypto deep-links.",
+    "safety_mechanism": "Permission: in Home mode, 'Send to Broker' links for single stocks/crypto are disabled until account age \u226530 days.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Private Start",
+    "ring_feature": "Privacy Controls",
+    "what_user_does": "User connects brokerage read-only; app masks balances during screen-share and shows anonymized fund tickers.",
+    "safety_mechanism": "Permission: viewing balances/holdings requires biometric each session; export is blocked without explicit 6-digit PIN.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Impact Preview",
+    "ring_feature": "Live View",
+    "what_user_does": "User previews adding a total-market ETF; Live View simulates allocation impact and diversification changes instantly.",
+    "safety_mechanism": "Rule: if any asset would exceed 20% allocation, 'Add to Plan' is disabled until weights are adjusted.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Fund Story Playback",
+    "ring_feature": "Event History/Playback",
+    "what_user_does": "User taps Playback on an ETF; system replays timeline of fees, index changes, and sector weights.",
+    "safety_mechanism": "Evidence requirement: user must watch \u226515 seconds of the fee-change playback and answer 1 question; otherwise 'Add to Plan' stays disabled.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Volatility Sensitivity Slider",
+    "ring_feature": "Motion Zones/Sensitivity",
+    "what_user_does": "User sets max 30-day volatility; search results immediately hide ETFs exceeding sensitivity.",
+    "safety_mechanism": "Filter: assets with 30-day volatility > user threshold are excluded via API query; override requires scoring \u22654/5 on a short quiz.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Quick Snapshot Compare",
+    "ring_feature": "Snapshot/Check-in",
+    "what_user_does": "User selects two S&P 500 ETFs; system shows snapshots comparing fees, spread, size, and tracking.",
+    "safety_mechanism": "Evidence requirement: user must attach a fee source link before 'Save Choice' becomes tappable.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Rationale Prompts",
+    "ring_feature": "Two-Way Talk",
+    "what_user_does": "User records why they like an ETF; app prompts with questions and saves the conversation transcript.",
+    "safety_mechanism": "Checklist gating: completing a 5-point rationale checklist enables the 'Send to Broker' link; otherwise it stays disabled.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Fee Drift Alert",
+    "ring_feature": "Motion Alerts",
+    "what_user_does": "User stars three ETFs; app sends Motion Alerts when an expense ratio increases by more than 0.05%.",
+    "safety_mechanism": "Threshold: if expense ratio increases >0.05%, 'Keep in Plan' toggle locks until review.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Tracking Error Alert",
+    "ring_feature": "Motion Alerts",
+    "what_user_does": "User adds an index fund to shortlist; app alerts if monthly tracking error exceeds 1%.",
+    "safety_mechanism": "Threshold: when tracking error >1%, the fund card shows a red banner and disables 'Recommend to Friend' until acknowledged.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Zone Breach Alert",
+    "ring_feature": "Motion Zones/Sensitivity",
+    "what_user_does": "User tries adding a biotech ETF outside their zones; system blocks and suggests matching in-zone alternatives.",
+    "safety_mechanism": "Permission: adding out-of-zone assets requires passing a 3-question suitability quiz; otherwise 'Add to Plan' remains disabled.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Quiet Hours Risk Lock",
+    "ring_feature": "Modes Home/Away",
+    "what_user_does": "User toggles Away mode overnight; app suppresses alerts and prevents ETF plan changes during 8pm\u20138am.",
+    "safety_mechanism": "Rule: 'Send to Broker' links and 'Confirm Changes' are disabled between 20:00\u201308:00 local time.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Research Playback Lesson",
+    "ring_feature": "Event History/Playback",
+    "what_user_does": "User opens Playback of their last ETF research; system highlights steps taken and missed learning modules.",
+    "safety_mechanism": "Evidence requirement: adding notes and one external link is required to mark the lesson complete; otherwise progress remains locked.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Weekly Snapshot Lesson",
+    "ring_feature": "Snapshot/Check-in",
+    "what_user_does": "User taps Weekly Snapshot; app explains one concept using their chosen index funds as examples.",
+    "safety_mechanism": "Quiz: a 3-question check with \u22652 correct is required to unlock the next topic.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Office Hours",
+    "ring_feature": "Two-Way Talk",
+    "what_user_does": "User schedules Two-Way Talk with a certified educator; app opens a secure chat to discuss ETF basics.",
+    "safety_mechanism": "Permission: educator identity verified; session limited to 15 minutes, and 'Send to Broker' remains disabled until a summary is saved.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Sensitivity Tutorial",
+    "ring_feature": "Motion Zones/Sensitivity",
+    "what_user_does": "User slides sensitivity examples; system visually shows how higher volatility filters out certain sector ETFs.",
+    "safety_mechanism": "Rule: tutorial completion requires testing three thresholds; only then is the sensitivity control unlocked in search.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Trusted Friend Review",
+    "ring_feature": "Shared Access",
+    "what_user_does": "User grants Shared Access to a friend for their shortlist; friend leaves comments on two ETFs.",
+    "safety_mechanism": "Permission: friend must enter a 6-digit code; 'Send to Broker' link stays disabled until at least one comment is received.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Family Read-Only Plan",
+    "ring_feature": "Shared Access",
+    "what_user_does": "User invites a family member to view-only plan; app shows masked numbers and ETF holdings by category.",
+    "safety_mechanism": "Permission: access auto-expires after 30 days; user can revoke anytime; downloads are disabled for viewers.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Two-Approval Single Stock",
+    "ring_feature": "Shared Access",
+    "what_user_does": "User attempts to add a single stock; app requests approvals from two trusted contacts before saving.",
+    "safety_mechanism": "Permission: requires two unique approvals within 48 hours; without both, the 'Add to Plan' action is blocked.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Ask a Friend Voice Chat",
+    "ring_feature": "Two-Way Talk",
+    "what_user_does": "User sends a voice question about an ETF; friend replies; app threads the conversation beside the fund.",
+    "safety_mechanism": "Delay: after a reply arrives, a 12-hour cooldown keeps 'Send to Broker' disabled to reduce impulse decisions.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Decision Playback",
+    "ring_feature": "Event History/Playback",
+    "what_user_does": "User opens Playback of past choices; app replays reasons, dates, and follow-up actions on each ETF.",
+    "safety_mechanism": "Delay: changing any position notes triggers a 24-hour review hold where 'Send to Broker' links are disabled.",
+    "category": "Post-Decision Support"
+  },
+  {
+    "idea_name": "Plan Drift Alert",
+    "ring_feature": "Motion Alerts",
+    "what_user_does": "User sets target weights; app sends Motion Alerts when allocation drifts more than 5% from targets.",
+    "safety_mechanism": "Threshold: when drift >5%, rebalancing suggestions are locked until the user confirms via a checklist.",
+    "category": "Post-Decision Support"
+  },
+  {
+    "idea_name": "Away Mode Vacation Pause",
+    "ring_feature": "Modes Home/Away",
+    "what_user_does": "User switches to Away before vacation; app pauses notifications and hides ETF decision prompts.",
+    "safety_mechanism": "Permission: disabling Away requires PIN and a 12-hour wait; all 'Send to Broker' links stay hidden meanwhile.",
+    "category": "Post-Decision Support"
+  },
+  {
+    "idea_name": "Export Redaction",
+    "ring_feature": "Privacy Controls",
+    "what_user_does": "User exports a plan summary to share; app removes names and masks sensitive numbers automatically.",
+    "safety_mechanism": "Filter: report generator redacts PII and obscures account numbers by default; export requires biometric confirmation.",
+    "category": "Post-Decision Support"
+  }
+]

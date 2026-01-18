@@ -1,0 +1,99 @@
+1. ETF Live Lens — Feature: Live View; Tag: Transparency
+Concept: You tap Live View on a total-market ETF; app shows top holdings, fee, sectors, and past worst-year drop.
+Safety: Data pulled from vetted market API; unverified sources blocked by whitelist filter.
+
+2. Amount Risk Gauge — Feature: Live View; Tag: Risk Fit
+Concept: You drag investment amount; Live View updates projected drawdown range and chance of recovery time before confirming.
+Safety: Projection uses conservative historical percentiles; confirm disabled if drawdown exceeds your chosen threshold.
+
+3. Allocation Live Overlay — Feature: Live View; Tag: Diversification
+Concept: You open Live View for your plan; app overlays current allocation against target bands and highlights gaps.
+Safety: Orders blocked when a single holding would breach max-percentage rule you set.
+
+4. Fee Change Alert — Feature: Motion Alerts; Tag: Transparency
+Concept: You follow an ETF; Motion Alerts notify if fee increases or index methodology changes, with a plain summary.
+Safety: Alert triggers on data change events; trades locked 24 hours post-change unless you acknowledge summary.
+
+5. Drift Band Alert — Feature: Motion Alerts; Tag: Diversification
+Concept: You set target mix; Motion Alerts ping when allocation drifts beyond 5% band and suggest a small rebalance checklist.
+Safety: Actions require checklist completion; rebalances limited by per-week cap to avoid overtrading.
+
+6. Hype Spike Cooldown — Feature: Motion Alerts; Tag: Impulse Control
+Concept: You open a trending stock; Motion Alerts warn of unusual spike and start a 24-hour cooling-off timer before buy button enables.
+Safety: Buy disabled until timer expires or you pass a risk quiz; threshold set by daily volatility filter.
+
+7. Decision Playback Journal — Feature: Event History/Playback; Tag: Impulse Control
+Concept: You tap Playback; app replays your last month’s decisions with timestamps, reasons you logged, and outcomes against a benchmark.
+Safety: Requires reason entry field before each order; incomplete reasons block submit.
+
+8. Crash Replay for ETF — Feature: Event History/Playback; Tag: Risk Fit
+Concept: You choose an ETF; Playback shows how it behaved in 2008, 2020, and similar drops with simple loss ranges.
+Safety: Loss ranges use audited index data; optimistic scenarios filtered out by rule.
+
+9. Rumor Pattern Playback — Feature: Event History/Playback; Tag: Fraud/Scam
+Concept: You search a coin; Playback contrasts prior rumor spikes with later fundamentals and flags pump patterns.
+Safety: Flags triggered by volume-spike plus news-source credibility filter; speculative buys restricted to sandbox.
+
+10. ETF-Only Zone — Feature: Motion Zones/Sensitivity; Tag: Risk Fit
+Concept: You set Motion Zones to ETFs only; app hides single-stock suggestions and filters news to broad-market topics.
+Safety: Single-stock buy links disabled by category filter until you change zone setting.
+
+11. Low-Sensitivity Mode — Feature: Motion Zones/Sensitivity; Tag: Impulse Control
+Concept: You adjust sensitivity to ‘Low’; app suppresses alerts under 3% daily moves, reducing noise.
+Safety: Rule-based threshold prevents frequent pings; cannot set below critical risk alerts.
+
+12. Exchange Whitelist Zone — Feature: Motion Zones/Sensitivity; Tag: Fraud/Scam
+Concept: You mark a zone to exclude OTC and unlisted assets; app hides them from search.
+Safety: Search results filtered by exchange whitelist; override requires explicit permission toggle.
+
+13. Peer Approval Gate — Feature: Shared Access; Tag: Social Support
+Concept: You invite a trusted friend; your first single-stock order requires their quick thumbs-up review in-app.
+Safety: Execution permission gated by peer approval rule for first three single-stock orders.
+
+14. Partner Deposit Check — Feature: Shared Access; Tag: Diversification
+Concept: You share read-only plan with a partner; deposits over $1,000 ping them to confirm allocation matches targets.
+Safety: Large-deposit actions paused until partner acknowledges; threshold configurable.
+
+15. Accountability Buddy Summary — Feature: Shared Access; Tag: Social Support
+Concept: You add an accountability buddy; app sends them a weekly summary if you exceed two discretionary trades.
+Safety: Trigger uses trade-count threshold; excess trading temporarily disabled next week.
+
+16. Checklist Chat — Feature: Two-Way Talk; Tag: Social Support
+Concept: You tap Two-Way Talk; a vetted peer volunteer joins a chat to walk through your checklist before risky moves.
+Safety: Volunteers approved via identity verification; chat ends with checklist completion permission step.
+
+17. Pump Report Hotline — Feature: Two-Way Talk; Tag: Fraud/Scam
+Concept: You open Two-Way Talk to report a DM pump; moderator helps file a broker report and blocks the ticker in-app.
+Safety: Blocklist applied immediately; future searches for ticker return warning screen by rule.
+
+18. Research Mode Lock — Feature: Modes (Home/Away); Tag: Impulse Control
+Concept: You set mode to Home (Research); app disables buy buttons, letting you bookmark ETFs and take notes only.
+Safety: Purchases require switching to Away (Trade) with a 12-hour delay.
+
+19. Learning Mode Sandbox — Feature: Modes (Home/Away); Tag: Risk Fit
+Concept: You toggle Learning Mode; app routes single-stock picks to a paper sandbox while ETF buys stay live.
+Safety: Single-stock live trades locked until you complete two weeks of sandbox results.
+
+20. Travel Away Lock — Feature: Modes (Home/Away); Tag: Fraud/Scam
+Concept: You enable Away Mode while traveling; app blocks new device logins and broker-link changes.
+Safety: Actions require existing-device permission; suspicious IPs filtered by geolocation rule.
+
+21. Weekly Snapshot Card — Feature: Snapshot/Check-in; Tag: Transparency
+Concept: You tap Weekly Snapshot; app shows balance, fees paid, allocation vs target, and drift in one card.
+Safety: Data comes from read-only broker connection; no trade permissions granted.
+
+22. Pre-Trade Check-in — Feature: Snapshot/Check-in; Tag: Diversification
+Concept: Before buying, you do a 30-second Check-in; app confirms asset fits your mix and flags overlaps.
+Safety: Buy button stays disabled until check-in passes rule-based overlap limits.
+
+23. Stress Pause Snapshot — Feature: Snapshot/Check-in; Tag: Impulse Control
+Concept: You take a quick mood check; app delays orders if you report high stress.
+Safety: Delay enforced by self-set timer; override requires entering a written reason.
+
+24. Masked Share Mode — Feature: Privacy Controls; Tag: Privacy
+Concept: You toggle Privacy Controls before screen-sharing; app masks balances and account numbers while keeping plan details visible.
+Safety: Masking happens client-side; sensitive fields redacted by field-level permission rules.
+
+25. PIN for Sensitive Actions — Feature: Privacy Controls; Tag: Privacy
+Concept: You set a PIN inside Privacy Controls; app requires it for changing bank links or exporting data.
+Safety: Sensitive actions gated by PIN and device biometric permission.

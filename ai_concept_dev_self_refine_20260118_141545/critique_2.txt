@@ -1,0 +1,75 @@
+[CRITIQUE]
+- Repetition: Several ideas converge on similar artifacts (many “cards,” multiple snapshot variants). While mechanisms are balanced, output types feel repetitive, limiting differentiation.
+- Vagueness: A few ideas (e.g., “thesis drift” via headlines, “tracking error over years”) risk unclear data availability or logic without specifying simple, obtainable signals.
+- Missing directions: No clustering structure beyond Moments; hard to group for product planning. Lacks explicit categories for onboarding, education, alerts, etc.
+- Weak Ring mapping: Most map well, but a few are thin adaptations (e.g., generic “co-view” shares) that could better leverage Ring’s specific safety mechanics (zones, modes, privacy-first defaults).
+- Safety clarity: Safety targets are named, but emotional safeguards (tone, non-judgmental microcopy, anonymized sharing) could be more consistently enforced, especially for Social/Shared ideas.
+- Feasibility: Generally plausible, but some items may need niche data (tracking error history), which could exceed a 3‑month scope; more emphasis on mainstream, readily available signals would help.
+
+PROMPT issues that caused this:
+- The prompt privileged “Moments” over functional categories, making clustering by user need harder.
+- It did not require artifact diversity across the set, leading to many “card” outputs.
+- It allowed broad data references (e.g., “thesis drift”) without bounding to simple signals, creating feasibility ambiguity.
+- Social/Shared features weren’t forced to include privacy defaults, risking emotional safety gaps.
+- It didn’t require distribution across functional categories, so coverage could skew.
+- It didn’t require the safety mechanism line to explicitly name a safety target from a controlled list, allowing inconsistency.
+
+Improvements (constraints/additions):
+- Require category coverage: at least 3 ideas in each category (Onboarding, Decision Support, Risk Alerts, Education, Social Support, Post-Decision Support), max 6 per category.
+- Enforce ring_feature distribution: use each Ring feature 2–4 times across the set.
+- Artifact diversity: across all ideas, include at least 6 distinct output artifacts (e.g., badge, banner, modal, checklist, timeline, graph, alert, drawer, tooltip, snapshot).
+- Concrete inputs and outputs: each idea’s “what_user_does” must name at least one specific input control and one specific output artifact.
+- Data feasibility: limit to mainstream, readily accessible signals (prices, percent changes, fees, volatility bands, diversification metrics, broad news headlines, user-entered notes/rules); avoid niche datasets.
+- Social safety: Social Support ideas must mention default masking/anonymization controls in “what_user_does.”
+- Safety mechanism precision: require the safety sentence to follow the exact mapping pattern and include one safety target from [fear_of_loss, fear_of_being_wrong, fear_of_not_knowing, FOMO, regret, shame].
+- Distinctness rule: each idea must differ by at least one of ring_feature, category, trigger/condition, or output artifact.
+
+[REVISED_PROMPT]
+You are generating concept ideas for a design project.
+
+Primary goal (non‑negotiable):
+Make choosing investments feel emotionally safe and reassuring for young adults/beginner investors (calm, non‑overwhelming, confidence‑building, low‑regret, low‑shame, protective, supportive).
+
+HMW:
+How might we make choosing investments feel as safe and reassuring as using a Ring Doorbell?
+
+Analogy reminder:
+Use Ring mechanisms as safety mechanisms, not superficial copies. Allowed ring_feature values:
+- Live View
+- Motion Alerts
+- Event History/Playback
+- Motion Zones/Sensitivity
+- Shared Access
+- Two-Way Talk
+- Modes Home/Away
+- Snapshot/Check-in
+- Privacy Controls
+
+Generation task:
+Produce exactly 25 distinct, implementable software concepts (mobile/web) that help young adults choose what to invest in.
+
+Output format:
+Return a JSON array of exactly 25 objects. Each object must have these fields only:
+- idea_name: 3–6 words.
+- ring_feature: one of the allowed Ring features above.
+- what_user_does: exactly one sentence that includes at least one concrete input (e.g., toggle, slider, dropdown, threshold, text field, selection) and at least one concrete output artifact (e.g., alert, badge, banner, modal, graph, timeline, checklist, snapshot card, tooltip, drawer).
+- safety_mechanism: exactly one sentence following this exact pattern and naming a safety target from the list: “In Ring, [ring_feature] does X; here it becomes Y, which reduces [fear_of_loss|fear_of_being_wrong|fear_of_not_knowing|FOMO|regret|shame].”
+- category: one of [Onboarding, Decision Support, Risk Alerts, Education, Social Support, Post-Decision Support].
+
+Constraints:
+- Ring feature coverage: Use each ring_feature at least 2 times and at most 4 times across the 25 ideas.
+- Category coverage: Include at least 3 ideas in each category and at most 6 in any single category.
+- Implementability: Software-only; plausible to prototype within ~3 months by a small team. Use only mainstream, readily accessible signals (e.g., prices, percent/daily changes, basic volatility bands, drawdowns, fees/expense ratios, diversification metrics, simple news/headline keywords, user-entered rules/notes). No performance guarantees or implied-certainty trading signals. Frame outputs as education, rules, explainable checks.
+- Social safety: Any idea in Social Support must include masking/anonymization defaults in “what_user_does” (e.g., mask balances, redact PII).
+- Artifact diversity: Across all 25 ideas, include at least 6 distinct output artifact types (examples: badge, banner, modal, checklist, timeline, graph, alert, drawer, tooltip, snapshot card). Avoid overusing a single artifact.
+- Distinctness: Each idea must differ meaningfully by at least one of ring_feature, category, trigger/condition, or output artifact. Avoid near-duplicates.
+- Tone: Supportive and non-judgmental; avoid social comparison and leaderboards.
+
+Checklist before you output:
+- Count ring_feature usages to ensure each appears 2–4 times.
+- Ensure category distribution: 3–6 per category.
+- Verify each “safety_mechanism” follows the exact sentence pattern and names one safety target.
+- Verify each “what_user_does” contains both a concrete input and a concrete output artifact.
+- Ensure artifact variety across the set (≥6 distinct output artifact types).
+
+Output only the JSON array, no extra commentary.

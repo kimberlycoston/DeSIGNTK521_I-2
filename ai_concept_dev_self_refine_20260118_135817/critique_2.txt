@@ -1,0 +1,56 @@
+[CRITIQUE]
+- Repetition: Several ideas reuse the same guardrails (cooldowns, checklists, filters) across different features without clear differentiation in when/where they apply (e.g., multiple cooldowns and peer approvals). Shared Access items 13–15 all center on oversight for discretionary trades with similar mechanics.
+- Vagueness: Many “Safety” lines lack concrete triggers or enforcement objects (e.g., “conservative historical percentiles,” “vetted market API” without thresholds, “approved via identity verification” without what’s gated). Numeric thresholds and explicit disable/lock actions are often missing.
+- Weak/mixed Ring mapping: Some features are broadly “fintech” and don’t emphasize the Ring metaphor strongly (e.g., “Weekly Snapshot Card” could more clearly mirror Snapshot/Check-in periodicity; “Decision Playback Journal” is good, but others read as generic alerts).
+- Missing structural signals: No clustering by journey stage; this makes it harder to see coverage across Onboarding, Decision Support, Risk Alerts, etc. Outputs weren’t in a structured schema (harder to parse or deduplicate).
+- Feasibility watch-outs: Human moderation (“Pump Report Hotline”) and identity-verified volunteers could exceed a small team’s capacity; reliance on filing broker reports hints at external org dependencies. Some “audited index data” claims may be unrealistic; better to cite mainstream APIs and rules.
+- Overlapping scope: Several ideas target allocation drift and ETF filters; fewer unique mechanics for fraud prevention beyond whitelists and pumps. Single stock/crypto gating appears, but consistency of sandbox vs. quiz vs. cooldown varies without a rationale.
+- Naming precision: “Modes (Home/Away)” label differs from the requested “Modes Home/Away.” Feature naming consistency matters for automated checks.
+- Safety mechanisms clarity: Some mechanisms state intent not method; e.g., “reducing noise” vs. “suppress alerts under X% with buy temporarily disabled.” Need explicit rule/threshold/permission/delay/filter.
+
+[REVISED_PROMPT]
+You are generating concept ideas for a design project.
+
+Context
+- HMW: How might we make choosing investments more like Ring Doorbells?
+- Audience: young adults / beginner investors
+- Desired emotion: safety
+- Ring features to map to (use exact strings): Live View, Motion Alerts, Event History/Playback, Motion Zones/Sensitivity, Shared Access, Two-Way Talk, Modes Home/Away, Snapshot/Check-in, Privacy Controls
+- Analogy anchors: monitoring, alerts, event history, zones/sensitivity, shared access, two-way talk, modes, snapshots/check-ins, privacy.
+
+Task
+Generate exactly 25 concrete, implementable concept ideas for a service that helps young adults choose what to invest in, where the experience feels SAFE like Ring Doorbells.
+
+Hard constraints
+- Structured output: Return ONLY a JSON array of 25 objects (no extra text). Each object must include exactly these fields:
+  - idea_name (short, unique)
+  - ring_feature (one of: Live View, Motion Alerts, Event History/Playback, Motion Zones/Sensitivity, Shared Access, Two-Way Talk, Modes Home/Away, Snapshot/Check-in, Privacy Controls)
+  - what_user_does (≤24 words; must include a concrete user action and the system response; mention asset type like ETF/index fund/single stock/crypto where relevant)
+  - safety_mechanism (one sentence; must specify the exact mechanism with an enforcement object and, when relevant, a numeric rule/threshold/delay/permission/evidence requirement/filter)
+  - category (one of: Onboarding, Decision Support, Risk Alerts, Education, Social Support, Post-Decision Support)
+- Coverage by Ring features: Each idea maps to exactly one ring_feature. Across the 25 ideas, each ring_feature appears at least 2 times and at most 4 times.
+- Coverage by categories: At least 3 ideas per category and no more than 6 ideas per category.
+- Distinctness: Do not reuse the same primary mechanic more than 3 times across the set (e.g., cooldown delay, peer approval, whitelist filter, checklist gating, sandbox/paper trading, PIN/biometric, drift bands). If a mechanic repeats, apply it to a clearly different step (e.g., research vs. execution vs. post-decision review) with different triggers.
+- Feasibility: Design for a small team to build in ≤6 months using off‑the‑shelf market data/APIs (e.g., IEX Cloud, Morningstar, Alpha Vantage), push notifications, and simple rule-based checks. No new financial licenses or custody. Assume read-only brokerage connections for data (e.g., Plaid/Finicity).
+- External org dependency: At most 2 ideas should rely on external organizations or live human moderators/paid educators; if used, keep them within Social Support or Education.
+- Asset scope: Default to diversified assets (index funds/ETFs). If single stocks or crypto appear, include explicit gating or a sandbox step in the safety_mechanism (e.g., paper-only until conditions met, quiz, approvals, or dollar caps).
+- Language: Plain English, beginner-friendly. Avoid these terms: robo-advisor, AI-powered feed, gamified, leaderboards, copy trading. No performance promises or claims of beating the market.
+
+Quality constraints
+- Make the Ring analogy obvious in what_user_does by reflecting the chosen ring_feature’s behavior (e.g., Motion Zones/Sensitivity as filters/allowlists; Event History/Playback as time-based replays).
+- Safety_mechanism must name the guardrail type (rule, threshold, delay, permission, evidence requirement, or filter) and how it is enforced (e.g., disables buy button, blocks ticker, requires PIN/biometric, requires checklist completion), preferably with a measurable trigger (e.g., “>5% drift,” “24-hour delay”).
+- Keep each idea specific and implementable; avoid vague wording like “smart,” “advanced,” or “conservative” without numbers.
+- No reliance on trade execution; focus on selection, review, and decision support around diversified investing.
+
+Output format example (schema only; do not include this example in your output):
+[
+  {
+    "idea_name": "Short unique title",
+    "ring_feature": "Live View",
+    "what_user_does": "User action, then system response, including asset type if applicable.",
+    "safety_mechanism": "Specific rule/threshold/delay/permission/evidence requirement/filter and the enforcement object.",
+    "category": "Decision Support"
+  }
+]
+
+Now generate the 25 JSON objects.

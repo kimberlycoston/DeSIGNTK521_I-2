@@ -1,0 +1,199 @@
+1) 
+Name: Risk Live View Preview
+Ring mechanism: Live View
+Moment: Before
+Safety target: fear_of_not_knowing, fear_of_loss
+Why this increases safety: In Ring, Live View shows a live feed; here it becomes a live risk/fee/volatility panel, which reduces fear_of_not_knowing.
+User interaction: User selects a ticker and toggles “Live metrics”; a compact card shows real-time volatility gauge, fee label, and diversification bar.
+
+2) 
+Name: Checkout Live Cost View
+Ring mechanism: Live View
+Moment: During
+Safety target: regret, fear_of_being_wrong
+Why this increases safety: In Ring, Live View shows a live feed; here it becomes live total cost (spread/fees) at checkout, which reduces regret.
+User interaction: User enters amount and toggles “Show all costs”; a pricing breakdown card updates continuously with spread, fee labels, and net invested.
+
+3) 
+Name: Portfolio Pulse Live View
+Ring mechanism: Live View
+Moment: Ongoing
+Safety target: fear_of_loss, FOMO
+Why this increases safety: In Ring, Live View shows a live feed; here it becomes live portfolio drift vs target view, which reduces FOMO.
+User interaction: User sets target allocations via sliders; a live graph displays current vs target bands and highlights out-of-band positions.
+
+4) 
+Name: Calm Threshold Motion Alerts
+Ring mechanism: Motion Alerts
+Moment: Ongoing
+Safety target: fear_of_loss
+Why this increases safety: In Ring, Motion Alerts notify on movement; here they alert on price swings beyond a chosen percent, which reduces fear_of_loss.
+User interaction: User sets a daily move threshold slider; a gentle notification alert appears with a simple “context card” explaining size vs history.
+
+5) 
+Name: Volatility Change Confirm Alert
+Ring mechanism: Motion Alerts
+Moment: During
+Safety target: regret
+Why this increases safety: In Ring, Motion Alerts notify on movement; here they warn if volatility jumped since checkout started, which reduces regret.
+User interaction: User presses “Review order”; if realized volatility rises above a threshold, a modal alert shows a red label and “pause/continue” buttons.
+
+6) 
+Name: Post-Buy Drift Alerts
+Ring mechanism: Motion Alerts
+Moment: After
+Safety target: fear_of_being_wrong, shame
+Why this increases safety: In Ring, Motion Alerts notify on movement; here they flag thesis drift (news, fundamentals) against saved notes, which reduces fear_of_being_wrong and shame.
+User interaction: User saves a brief thesis note; when conflicting headlines appear, an alert card prompts “review thesis” with links.
+
+7) 
+Name: Past Storm Playback
+Ring mechanism: Event History/Playback
+Moment: Before
+Safety target: fear_of_not_knowing
+Why this increases safety: In Ring, Event History/Playback replays visits; here it replays past drawdowns and recoveries, which reduces fear_of_not_knowing.
+User interaction: User selects an asset and a timeframe dropdown; a playback timeline animates drawdown depth, recovery time, and headline markers.
+
+8) 
+Name: Decision Replay Journal
+Ring mechanism: Event History/Playback
+Moment: After
+Safety target: regret, shame
+Why this increases safety: In Ring, Event History/Playback reconstructs events; here it replays your decision, context, and outcomes, which reduces regret and shame.
+User interaction: User tags the reason via checkboxes at purchase; a post-hoc timeline card shows tags alongside subsequent price and events.
+
+9) 
+Name: Fee Change History Reel
+Ring mechanism: Event History/Playback
+Moment: Ongoing
+Safety target: fear_of_being_wrong
+Why this increases safety: In Ring, Event History/Playback shows what happened; here it shows fee changes and tracking error over years, which reduces fear_of_being_wrong.
+User interaction: User selects a fund and toggles “Show fee history”; a scrollable timeline displays expense ratio changes and impact labels.
+
+10) 
+Name: Focus Zones Screener
+Ring mechanism: Motion Zones/Sensitivity
+Moment: Before
+Safety target: fear_of_not_knowing, FOMO
+Why this increases safety: In Ring, Motion Zones/Sensitivity filters areas; here it filters investable universes to sectors/risks you choose, which reduces FOMO.
+User interaction: User checks sectors and volatility bands; the screener shows only matching cards with risk labels and hides others.
+
+11) 
+Name: Sensitivity Slider For Alerts
+Ring mechanism: Motion Zones/Sensitivity
+Moment: Ongoing
+Safety target: fear_of_loss
+Why this increases safety: In Ring, Motion Zones/Sensitivity sets detection levels; here it sets alert sensitivity for swings and news, which reduces fear_of_loss.
+User interaction: User adjusts a sensitivity slider; an example preview shows expected alert frequency and sample alert cards.
+
+12) 
+Name: Risk Zone Guardrail Banner
+Ring mechanism: Motion Zones/Sensitivity
+Moment: During
+Safety target: regret, fear_of_being_wrong
+Why this increases safety: In Ring, Motion Zones/Sensitivity blocks irrelevant motion; here it blocks checkout for assets outside your risk zones, which reduces regret.
+User interaction: User attempts to buy outside selected zone; a guardrail banner appears requiring a checkbox acknowledgment to proceed.
+
+13) 
+Name: Trusted Co-View Session
+Ring mechanism: Shared Access
+Moment: Before
+Safety target: shame, fear_of_being_wrong
+Why this increases safety: In Ring, Shared Access lets others see the feed; here it lets a trusted person co-view research without balances, which reduces shame.
+User interaction: User invites via email and toggles “hide amounts”; the collaborator sees a shared research card and comments pane.
+
+14) 
+Name: Share Decision Summary Link
+Ring mechanism: Shared Access
+Moment: After
+Safety target: shame, regret
+Why this increases safety: In Ring, Shared Access grants viewing; here it shares a sanitized decision summary for feedback, which reduces shame and regret.
+User interaction: User clicks “Create summary link” and selects redactions; a read-only card shows thesis, fees, and checklist status.
+
+15) 
+Name: Accountability Buddy Check-ins
+Ring mechanism: Shared Access
+Moment: Ongoing
+Safety target: shame, FOMO
+Why this increases safety: In Ring, Shared Access adds trusted viewers; here it enables opt-in check-ins with emoji-only responses, which reduces shame.
+User interaction: User schedules monthly check-ins and picks a buddy; the buddy receives a simple snapshot card and can send an emoji note.
+
+16) 
+Name: Ask-Back Explainer Chat
+Ring mechanism: Two-Way Talk
+Moment: Before
+Safety target: fear_of_not_knowing
+Why this increases safety: In Ring, Two-Way Talk answers at the door; here it answers plain-language questions with sources, which reduces fear_of_not_knowing.
+User interaction: User types a term and selects “explain level”; a chat bubble returns a short card with definition and source links.
+
+17) 
+Name: Reason Prompt Two-Way
+Ring mechanism: Two-Way Talk
+Moment: During
+Safety target: fear_of_being_wrong, regret
+Why this increases safety: In Ring, Two-Way Talk enables dialogue; here it prompts your reason and reflects risks back, which reduces fear_of_being_wrong and regret.
+User interaction: User enters a reason and checks risk boxes; a concise risk summary card appears with confirm/cancel buttons.
+
+18) 
+Name: Market Noise Away Mode
+Ring mechanism: Modes Home/Away
+Moment: Ongoing
+Safety target: FOMO
+Why this increases safety: In Ring, Modes Home/Away change behavior; here Away mutes non-critical alerts and hides price ticks, which reduces FOMO.
+User interaction: User toggles Away and selects “critical only”; the app shows a calm badge and only rare priority alerts.
+
+19) 
+Name: Research Home Mode Templates
+Ring mechanism: Modes Home/Away
+Moment: Before
+Safety target: fear_of_not_knowing
+Why this increases safety: In Ring, Modes Home/Away set presets; here Home loads a structured checklist template, which reduces fear_of_not_knowing.
+User interaction: User selects a template dropdown; a guided checklist card appears with required fields and progress bar.
+
+20) 
+Name: Calm Checkout Mode
+Ring mechanism: Modes Home/Away
+Moment: During
+Safety target: fear_of_loss, regret
+Why this increases safety: In Ring, Modes Home/Away adjust safeguards; here Checkout Mode adds spend caps and a timed confirm, which reduces fear_of_loss and regret.
+User interaction: User sets a per-trade cap and a confirmation timer; a countdown modal shows limits and a final confirm button.
+
+21) 
+Name: Morning Snapshot Check-in
+Ring mechanism: Snapshot/Check-in
+Moment: Ongoing
+Safety target: fear_of_loss
+Why this increases safety: In Ring, Snapshot/Check-in captures quick views; here it sends a tiny daily portfolio health snapshot, which reduces fear_of_loss.
+User interaction: User picks time and selects metrics; a compact card shows change, diversification badge, and cash buffer.
+
+22) 
+Name: One-Week Post-Buy Snapshot
+Ring mechanism: Snapshot/Check-in
+Moment: After
+Safety target: regret, fear_of_being_wrong
+Why this increases safety: In Ring, Snapshot/Check-in provides quick status; here it summarizes week-one vs plan, which reduces regret.
+User interaction: User sets a follow-up checkbox at purchase; after seven days a snapshot card shows thesis reminders and variance labels.
+
+23) 
+Name: Pre-Commit Snapshot Card
+Ring mechanism: Snapshot/Check-in
+Moment: Before
+Safety target: fear_of_not_knowing
+Why this increases safety: In Ring, Snapshot/Check-in offers quick peeks; here it presents key facts (fees, worst month, category), which reduces fear_of_not_knowing.
+User interaction: User taps “Snapshot” on an asset; a card displays three bullets with fee label, historical worst month, and sector.
+
+24) 
+Name: Privacy Masks Everywhere
+Ring mechanism: Privacy Controls
+Moment: Ongoing
+Safety target: shame
+Why this increases safety: In Ring, Privacy Controls limit what’s visible; here they mask balances and redact PII when sharing, which reduces shame.
+User interaction: User toggles “mask amounts” and selects redaction options; shared screens show blurred amounts and anonymized labels.
+
+25) 
+Name: Data Use Privacy Toggle
+Ring mechanism: Privacy Controls
+Moment: Before
+Safety target: fear_of_being_wrong, shame
+Why this increases safety: In Ring, Privacy Controls manage recording; here they control which personal data informs tips, which reduces fear_of_being_wrong and shame.
+User interaction: User toggles off “use browsing history” and chooses allowed sources; the app displays a compliance badge and adjusted tip cards.

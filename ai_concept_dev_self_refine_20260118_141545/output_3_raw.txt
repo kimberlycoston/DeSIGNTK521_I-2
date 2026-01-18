@@ -1,0 +1,177 @@
+[
+  {
+    "idea_name": "Calm Start Portfolio Preview",
+    "ring_feature": "Live View",
+    "what_user_does": "You choose up to three starter themes from a dropdown and tap a toggle for 'show fees', and a live mini graph with snapshot cards previews typical holdings and their fee badges.",
+    "safety_mechanism": "In Ring, Live View shows the real-time view of your doorstep; here it becomes a calm real-time preview of a sample portfolio’s risk and fees, which reduces fear_of_not_knowing.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Budget Guardrails Setup",
+    "ring_feature": "Motion Zones/Sensitivity",
+    "what_user_does": "You drag a slider to set a monthly investable amount and tick checkboxes for exclusions, and a checklist with green badges confirms your guardrails.",
+    "safety_mechanism": "In Ring, Motion Zones/Sensitivity lets you focus alerts to specific areas; here it becomes spend/volatility zones that constrain choices, which reduces fear_of_loss.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Safe Mode Starter Packs",
+    "ring_feature": "Modes Home/Away",
+    "what_user_does": "You select 'Home' or 'Away' from a mode selector and pick a risk level with a slider, and a modal explains what asset classes are enabled with a checklist.",
+    "safety_mechanism": "In Ring, Modes Home/Away arms or disarms your devices; here it becomes risk modes that limit risky assets and actions, which reduces fear_of_being_wrong.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Privacy-First Profile Intake",
+    "ring_feature": "Privacy Controls",
+    "what_user_does": "You toggle anonymized recommendations and enter age/income in masked text fields, and a banner shows which data is used with a tooltip for each item.",
+    "safety_mechanism": "In Ring, Privacy Controls restrict recording and data sharing; here it becomes granular data-use switches for recommendations, which reduces shame.",
+    "category": "Onboarding"
+  },
+  {
+    "idea_name": "Live Fund Fit Check",
+    "ring_feature": "Live View",
+    "what_user_does": "You paste a fund ticker into a text field and toggle 'compare to my plan', and a side-by-side graph with fee badges and diversification badges appears.",
+    "safety_mechanism": "In Ring, Live View shows a live feed; here it becomes a live fit check against your plan, which reduces fear_of_being_wrong.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Headline Motion Filters",
+    "ring_feature": "Motion Zones/Sensitivity",
+    "what_user_does": "You set keyword filters in a multi-select and adjust a sensitivity slider for news impact, and a timeline highlights matching headlines with colored badges.",
+    "safety_mechanism": "In Ring, Motion Zones/Sensitivity filters out irrelevant movement; here it becomes news filters that limit noise, which reduces FOMO.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "History Playback Explainer",
+    "ring_feature": "Event History/Playback",
+    "what_user_does": "You select a holding from a dropdown and choose a past period with a date range picker, and an annotated playback timeline with tooltips explains drawdowns and recoveries.",
+    "safety_mechanism": "In Ring, Event History/Playback lets you review past events; here it becomes an explainable playback of past risk episodes, which reduces fear_of_not_knowing.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Two-Way Ask an Analyst",
+    "ring_feature": "Two-Way Talk",
+    "what_user_does": "You type a question in a text field and pick a topic from a dropdown, and a chat drawer returns clarifying prompts and a summarized checklist of suitability.",
+    "safety_mechanism": "In Ring, Two-Way Talk lets you speak with visitors; here it becomes a guided Q&A that clarifies suitability before buying, which reduces fear_of_being_wrong.",
+    "category": "Decision Support"
+  },
+  {
+    "idea_name": "Motion Alerts for Volatility",
+    "ring_feature": "Motion Alerts",
+    "what_user_does": "You set a daily percent-change threshold with a number field and choose assets via multi-select, and you receive a calming alert with a context tooltip.",
+    "safety_mechanism": "In Ring, Motion Alerts notify you of movement; here it becomes volatility alerts with context, which reduces fear_of_loss.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Zone Breach Drawdown Watch",
+    "ring_feature": "Motion Zones/Sensitivity",
+    "what_user_does": "You drag bands on a graph to set acceptable drawdown zones and flip a toggle for 'pause buys on breach', and a banner warning appears when breached with a confirm modal.",
+    "safety_mechanism": "In Ring, Motion Zones/Sensitivity watches specific areas; here it becomes drawdown zones that suspend actions when crossed, which reduces regret.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Mode-Aware Quiet Hours",
+    "ring_feature": "Modes Home/Away",
+    "what_user_does": "You select 'Home' mode and set quiet hours with a time picker, and only critical alerts surface with a small badge counter during that period.",
+    "safety_mechanism": "In Ring, Modes Home/Away changes alert behavior; here it becomes notification modes that throttle non-critical pings, which reduces FOMO.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Snapshot Risk Check-ins",
+    "ring_feature": "Snapshot/Check-in",
+    "what_user_does": "You choose a daily check-in time with a time picker and select up to five holdings, and a snapshot card summarizes risk level badges and a simple trend graph.",
+    "safety_mechanism": "In Ring, Snapshot/Check-in captures periodic images; here it becomes scheduled risk snapshots with trend cues, which reduces fear_of_not_knowing.",
+    "category": "Risk Alerts"
+  },
+  {
+    "idea_name": "Playback Lessons Library",
+    "ring_feature": "Event History/Playback",
+    "what_user_does": "You select a concept from a dropdown (e.g., diversification) and scrub a slider through a sample portfolio timeline, and an annotated timeline with tooltips teaches each event.",
+    "safety_mechanism": "In Ring, Event History/Playback replays what happened; here it becomes interactive lessons replaying market scenarios, which reduces fear_of_not_knowing.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Live View Fee Transparency",
+    "ring_feature": "Live View",
+    "what_user_does": "You toggle 'show hidden costs' and type tickers in a text field, and a live fee graph with badges compares expense ratios and expected slippage ranges.",
+    "safety_mechanism": "In Ring, Live View reveals what’s at the door now; here it becomes real-time cost visibility for chosen funds, which reduces regret.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Privacy Sandbox Practice",
+    "ring_feature": "Privacy Controls",
+    "what_user_does": "You switch on 'practice with dummy data' using a toggle and set a fake balance in a number field, and a banner confirms sandbox mode with masked snapshot cards.",
+    "safety_mechanism": "In Ring, Privacy Controls let you turn off recording inside; here it becomes a sandbox that severs real accounts while learning, which reduces shame.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Two-Way Term Glossary",
+    "ring_feature": "Two-Way Talk",
+    "what_user_does": "You type a term in a text field and select your familiarity level from a dropdown, and a chat drawer provides plain-language definitions with expandable tooltips in examples.",
+    "safety_mechanism": "In Ring, Two-Way Talk enables back-and-forth with visitors; here it becomes conversational definitions on demand, which reduces fear_of_not_knowing.",
+    "category": "Education"
+  },
+  {
+    "idea_name": "Trusted Friend Read-Only",
+    "ring_feature": "Shared Access",
+    "what_user_does": "You add a contact via email in a text field with balances masked by default and choose 'comment-only' from a dropdown, and a shared view drawer shows redacted snapshot cards for feedback.",
+    "safety_mechanism": "In Ring, Shared Access lets you grant others limited device control; here it becomes masked read-only plan sharing, which reduces shame.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Coach Office Hours",
+    "ring_feature": "Two-Way Talk",
+    "what_user_does": "You pick an available slot from a scheduler and leave an anonymized question in a text field with PII redaction toggled on, and a confirmation banner plus a chat drawer deliver the session link and notes.",
+    "safety_mechanism": "In Ring, Two-Way Talk supports speaking safely through the door; here it becomes scheduled, anonymized coaching chat, which reduces fear_of_being_wrong.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Community Check‑in Board",
+    "ring_feature": "Snapshot/Check-in",
+    "what_user_does": "You post a masked weekly snapshot card by toggling 'hide amounts' and selecting tags, and a moderated thread drawer shows supportive comments without usernames by default.",
+    "safety_mechanism": "In Ring, Snapshot/Check-in shows periodic stills for awareness; here it becomes anonymized weekly progress snapshots to discuss, which reduces shame.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Role‑Based Family Access",
+    "ring_feature": "Shared Access",
+    "what_user_does": "You select a role from a dropdown (observer, collaborator) with balances masked by default and set permissions with checkboxes, and a permissions modal summarizes what invitees can see.",
+    "safety_mechanism": "In Ring, Shared Access delegates device roles; here it becomes permissioned portfolio viewing with masking, which reduces fear_of_being_wrong.",
+    "category": "Social Support"
+  },
+  {
+    "idea_name": "Event Playback After Buy",
+    "ring_feature": "Event History/Playback",
+    "what_user_does": "You click a recent purchase in a selection list and choose 'first 30 days' from a dropdown, and a playback timeline with annotations and badges reviews key movements since purchase.",
+    "safety_mechanism": "In Ring, Event History/Playback lets you revisit what happened; here it becomes a post-purchase review that contextualizes moves, which reduces regret.",
+    "category": "Post-Decision Support"
+  },
+  {
+    "idea_name": "Mode-Locked Cooling Off",
+    "ring_feature": "Modes Home/Away",
+    "what_user_does": "You toggle 'cooling-off' for 24 hours after a buy and set exceptions via checkboxes, and a lock icon badge and a disabled-action banner appear until the timer ends.",
+    "safety_mechanism": "In Ring, Modes Home/Away prevents accidental triggers when armed; here it becomes a temporary lock on impulsive trades, which reduces regret.",
+    "category": "Post-Decision Support"
+  },
+  {
+    "idea_name": "Motion Alerts Sell Nudges",
+    "ring_feature": "Motion Alerts",
+    "what_user_does": "You set a trailing drawdown threshold with a slider and pick assets from a multi-select, and a nudge alert with a decision checklist appears before selling.",
+    "safety_mechanism": "In Ring, Motion Alerts ping you when something moves; here it becomes drawdown nudges with pre-sell checks, which reduces fear_of_being_wrong.",
+    "category": "Post-Decision Support"
+  },
+  {
+    "idea_name": "Shared Access Accountability Notes",
+    "ring_feature": "Shared Access",
+    "what_user_does": "You select a trusted reviewer from a dropdown with balances masked by default and write a rationale in a text field, and a read-only snapshot card with a timestamped note banner is shared for acknowledgement.",
+    "safety_mechanism": "In Ring, Shared Access lets household members see activity; here it becomes optional masked post-trade sharing for review, which reduces regret.",
+    "category": "Post-Decision Support"
+  },
+  {
+    "idea_name": "Event History Win-Learn Review",
+    "ring_feature": "Privacy Controls",
+    "what_user_does": "You toggle 'private journal' and select a post-trade prompt from a dropdown, and a guided checklist with a timeline snippet is saved to your journal.",
+    "safety_mechanism": "In Ring, Privacy Controls limit who can view recordings; here it becomes a private reflection space that hides notes by default, which reduces shame.",
+    "category": "Post-Decision Support"
+  }
+]
